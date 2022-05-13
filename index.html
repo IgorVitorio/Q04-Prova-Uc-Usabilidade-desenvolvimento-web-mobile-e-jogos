@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+<h1>Formulário</h1>
+<hr><br>
+
+<form action="http://unifacs.br/uc/web.php" method="POST">
+
+    <label for="name">
+   1. Nome Completo: <input type="text" name="nome" id="nome" maxlength="50">
+    </label><br><br>
+
+    <label for="cpf">
+    2. CPF: <input type="" name="cpf" id="cpf" maxlength="20">
+    </label><br><br>
+
+    <label for="senha">
+    3. Senha: <input type="password" name="senha" id="senha" maxlength="30">
+    </label><br><br>
+
+    <label for="sexo">
+   4. Sexo:
+   <select name="sexo" id="sexo">
+    <option value="">Selecione</option>
+    <option value="Masculino">Masculino</option>
+    <option value="Feminino">Feminino</option>
+  </select>
+   </label><br><br>
+
+   <label for="dataNascimento">
+   5. Data de Nascimento: <input type="Date" name="dataNascimento" id="dataNascimento"> 
+   </label><br><br>
+
+   <button type="submit" onclick="validar()">Enviar</button>
+
+   &nbsp;&nbsp;
+
+   <button type="reset">Limpar</button>
+
+</form>
+
+</body>
+</html>
